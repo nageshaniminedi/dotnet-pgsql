@@ -18,7 +18,7 @@ deploy:
     context: skumarpi/DEV
     replicas: 1
     port:
-    - 8080
+    - 5001
     
 properties:
    DB_SERVER: pgconnect-0-2
