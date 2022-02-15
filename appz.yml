@@ -16,7 +16,9 @@ build:
     
 deploy:
     context: rejith/DEV
-    replicas: 1
+    replicas: 2
+    strategy : rolling
+    ready_seconds : 45    
     port:
     - 80
     
