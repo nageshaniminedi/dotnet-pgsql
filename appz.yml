@@ -1,7 +1,7 @@
 app:
     name: Postgres Dotnet Core
     code: POSTGRESDOTNETCORE
-    notify: krishnan.rejith@gmail.com
+    notify: fjoy@ecloudcontrol.com
     
 build:
     version: 3.1
@@ -15,7 +15,7 @@ build:
     image_template: dotnet-3.1
     
 deploy:
-    context: rejith/DEV
+    context: francisjoy/DEV
     replicas: 2
     strategy : rolling
     ready_seconds : 45    
