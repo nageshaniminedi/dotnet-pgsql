@@ -16,7 +16,7 @@ build:
     
 deploy:
     context: francisjoy/DEV
-    replicas: 2
+    replicas: 1
     strategy : rolling
     ready_seconds : 45    
     port:
