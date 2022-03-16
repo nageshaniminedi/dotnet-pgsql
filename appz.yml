@@ -15,7 +15,7 @@ build:
     image_template: dotnet-3.1
     
 deploy:
-    context: francisjoy/DEV
+    context: nageshaniminedi/DEV
     replicas: 2
     strategy : rolling
     ready_seconds : 45    
