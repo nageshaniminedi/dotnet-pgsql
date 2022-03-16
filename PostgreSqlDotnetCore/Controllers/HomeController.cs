@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PostgreSqlDotnetCore.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace PostgreSqlDotnetCore.Controllers
 {
@@ -20,11 +21,13 @@ namespace PostgreSqlDotnetCore.Controllers
 
         public IActionResult Index()
         {
+            HttpContext.Session.SetString("test","session values");
             return View();
         }
 
         public IActionResult Privacy()
         {
+            ViewBag.sessionv=HttpContext.Session.GetString("test");
             return View();
         }
 
